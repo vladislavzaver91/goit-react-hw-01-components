@@ -5,7 +5,7 @@ export function FriendListItem({ friend }) {
     const { avatar, name, isOnline } = friend;
     return (
         <FriendsItem>
-            <Status>{isOnline}</Status>
+            <Status isOnline={isOnline}/>
             <img className="avatar" src={avatar} alt={name} width="48" />
             <FriendsName>{name}</FriendsName>
         </FriendsItem>

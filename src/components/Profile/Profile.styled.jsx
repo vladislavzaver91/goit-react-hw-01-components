@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Card = styled.div`
-    background: #fff;
+    background: ${props => props.theme.colors.white};
     margin: 10px;
 `;
 export const Description = styled.div`
@@ -15,18 +15,18 @@ export const Description = styled.div`
 export const UserName = styled.p`
     font-size: 30px;
     font-weight: 700;
-    color: #000000;
+    color: ${props => props.theme.colors.primeText};
     padding-bottom: 20px;
 `;
 
 export const Tag = styled.p`
     font-size: 24px;
-    color: #afb0b3;
+    color: ${props => props.theme.colors.grey};
     padding-bottom: 20px;
 `;
 export const Location = styled.p`
     font-size: 24px;
-    color: #afb0b3;
+    color: ${props => props.theme.colors.grey};
     padding-bottom: 20px;
 `;
 
@@ -34,14 +34,14 @@ export const ListStats = styled.ul`
     padding: 0;
     list-style: none;
     display: flex;
-    background: #ededed;
+    background: ${props => props.theme.colors.bgColor};
 `;
 
 export const ListItem = styled.li`
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 1px solid #ffffff;
+    border: ${props => `1px solid ${props.theme.colors.white}`};
     flex-grow: 1;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -52,12 +52,12 @@ export const ListItem = styled.li`
 export const ListLabel = styled.span`
     font-size: 16px;
     text-align: center;
-    color: #9b9c9e;
+    color: ${props => props.theme.colors.secondText};
     padding-bottom: 10px;
 `;
 
 export const ListQuantity = styled.span`
     font-size: 20px;
     text-align: center;
-    color: #000000;
+    color: ${props => props.theme.colors.primeText};
 `;

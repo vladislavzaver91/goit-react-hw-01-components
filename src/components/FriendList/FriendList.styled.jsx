@@ -14,8 +14,8 @@ export const FriendsItem = styled.li`
     }
     display: flex;
     align-items: center;
-    border: 1px solid #ffffff;
-    background: #ffffff;
+    border: ${props => `1px solid ${props.theme.colors.white}`};
+    background: ${props => props.theme.colors.white};
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     img {
         margin-right: 20px;

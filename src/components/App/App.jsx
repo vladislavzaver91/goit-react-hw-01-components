@@ -25,12 +25,3 @@ export const App = () => {
     </Container>
   );
 };
-
-
-// display: 'flex',
-//         justifyContent: 'center',
-//         flexDirection: 'column',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//         background: '#ebe6e6',

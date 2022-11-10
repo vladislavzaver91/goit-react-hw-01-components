@@ -4,13 +4,13 @@ import RandomColor from 'utils/RandomColor';
 export const Section = styled.section`
     margin: 10px;
     padding-top: 20px;
-    background: #ffffff;
+    background: ${props => props.theme.colors.white};
     text-align: center;
-    outline: 1px solid #ffffff;
+    outline: ${props => `1px solid ${props.theme.colors.white}`};
 `;
 export const Title = styled.h2`
     margin-bottom: 30px;
-    color: #adacac;
+    color: ${props => props.theme.colors.thirdText};
     font-size: 32px;
 `;
 
@@ -22,7 +22,7 @@ export const StatList = styled.ul`
 export const StatItem = styled.li`
     display: flex;
     flex-direction: column;
-    outline: 1px solid #ffffff;
+    outline: ${props => `1px solid ${props.theme.colors.white}`};
     padding-top: 15px;
     padding-bottom: 15px;
     width: 80px;

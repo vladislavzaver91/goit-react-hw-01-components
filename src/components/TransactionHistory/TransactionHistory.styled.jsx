@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 
 export const Table = styled.table`
-    background: #fff;
+    background: ${props => props.theme.colors.white};
     text-align: center;
     margin-bottom: 50px;
 `;
 
 export const Tbody = styled.tbody`
-    border: 1px solid #ddd;
+    border: ${props => `1px solid ${props.theme.colors.borderColor}`};
     padding: 8px;
     :nth-of-type(odd) {
-        background-color: #f2f2f2;
+        background-color: ${props => props.theme.colors.secondBgColor};
     }
     td {
         font-size: 18px;
@@ -24,14 +24,14 @@ export const Tbody = styled.tbody`
 
 export const Thead = styled.thead`
     th {
-        border: 1px solid #ddd;
+        border: ${props => `1px solid ${props.theme.colors.borderColor}`};
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 100px;
         padding-right: 100px;
-        background: #41d1cf;
+        background: ${props => props.theme.colors.thirdBgColor};
         font-size: 22px;
         font-weight: 700;
-        color: #ffffff;
+        color: ${props => props.theme.colors.white};
     }
 `;
